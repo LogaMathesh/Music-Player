@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; }
+        button { margin-left: 10px; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+    <h1>My Music Player</h1>
+    <a href="/prev"><button>Previous</button></a>
+    <a href="/next"><button>Next</button></a>
+    <ul>
+        {% for song in playlist %}
+        <li>
+            {{ song.name }}
+            <form method="POST" action="/play" style="display:inline;">
+                <input type="hidden" name="song_path" value="{{ song.path }}">
+                <button type="submit">Play</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
