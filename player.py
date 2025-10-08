@@ -1,10 +1,11 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash
 import subprocess
 import os
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-C_PLAYER = r"C:\Users\mloga\OneDrive\Desktop\MusicPlayer.exe"
+C_PLAYER = "MusicPlayer.exe"
 PLAYLIST_FILE = "playlist.txt"
 
 
