@@ -1,2 +1,5 @@
 Monica|songs/Monica.mp3
-Oorum|songs/Oorum-Blood-MassTamilan.mp3
+Oorum|songs/Oorum-Blood-MassTamilan.dev.mp3
+Thangapoovey|songs/Thangapoovey_1759924043.mp3
+salambala|songs/Salambala_1759924582.mp3
+adiye |songs/Adiye-MassTamilan.fm_1759926155.mp3
